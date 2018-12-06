@@ -117,7 +117,8 @@ table {
         -ms-flex-pack: end;
             justify-content: flex-end;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap; }
+        flex-wrap: wrap;
+    overflow: visible; }
     .header-index ul li {
       text-decoration: none;
       text-transform: uppercase;
@@ -130,6 +131,12 @@ table {
         .header-index ul li a:hover {
           color: #0058A6;
           border-bottom: 2px solid #0058A6; }
+
+@media screen and (max-width: 320px) {
+  .header-index .nav-top ul {
+    visibility: hidden; }
+  .toggle {
+    overflow: visible; } }
 
 .container-banner-home {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.4))), url("../../images/image-banner-1.png");
@@ -149,7 +156,7 @@ table {
       -ms-flex-pack: center;
           justify-content: center; }
   .container-banner-home .content-banner-home {
-    margin: 30px;
+    margin: 0 auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -163,7 +170,7 @@ table {
     color: #ffffff;
     padding: 20px;
     max-width: 400px;
-    max-height: 300px; }
+    max-height: 350px; }
     .container-banner-home .content-banner-home h2 {
       font-size: 2.8rem;
       font-weight: 600;

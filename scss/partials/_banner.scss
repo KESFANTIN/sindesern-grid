@@ -11,7 +11,7 @@
     justify-content: center;
 
     .content-banner-home {
-        margin: 30px;
+        margin: 0 auto;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -19,7 +19,7 @@
         // background: rgba($preto, 0.5);
         padding: 20px;
         max-width: 400px;
-        max-height: 300px;
+        max-height: 350px;
 
         h2 {
             font-size: 2.8rem;
