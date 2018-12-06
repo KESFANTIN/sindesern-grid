@@ -132,12 +132,22 @@ table {
           border-bottom: 2px solid #0058A6; }
 
 .container-banner-home {
-  background: url("../../images/image-banner-1.png");
-  background-color: #666666;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.4))), url("../../images/image-banner-1.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)), url("../../images/image-banner-1.png");
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
-  max-height: 450px; }
+  height: 450px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
   .container-banner-home .content-banner-home {
     margin: 30px;
     display: -webkit-box;
@@ -151,7 +161,6 @@ table {
         -ms-flex-align: start;
             align-items: flex-start;
     color: #ffffff;
-    background: rgba(0, 0, 0, 0.5);
     padding: 20px;
     max-width: 400px;
     max-height: 300px; }
@@ -181,3 +190,12 @@ html {
       align-content: space-between;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap; }
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }

@@ -13,3 +13,8 @@ html {
     align-content: space-between;
     flex-wrap: nowrap;
 }
+
+main {
+    display: flex;
+    flex-direction: column;
+}
