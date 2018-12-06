@@ -1,0 +1,60 @@
+.header-index {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+
+    h1 {
+        flex: 1;
+    }
+
+    .nav-top {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        order: 1;
+    }
+
+    .social {
+        display: flex;
+        flex: 1;
+        align-items: center;
+        justify-content: flex-end;
+        
+        a {
+            color: $azul;
+            margin: 0 0 0 10px;
+
+            &:hover {
+                color: $azul / 2;
+            }
+        }
+    }
+
+    ul {
+        display: flex;
+        flex: 1;
+        order: 2;
+        align-items: center;
+        justify-content: flex-end;
+
+
+        li {
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: .9em;
+
+            a {
+                color: $cinza;
+                text-decoration: none;
+                padding: 10px 0;
+                margin: 0 0 0 10px;
+            
+                &:hover {
+                    color: $azul;
+                    border-bottom: 2px solid $azul;
+
+                }
+            }
+        }
+    }
+}
