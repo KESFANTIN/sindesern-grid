@@ -1,6 +1,7 @@
 .header-index {
     display: flex;
     justify-content: space-between;
+    flex-direction: row;
     margin: 10px;
 
     h1 {
@@ -36,7 +37,7 @@
         order: 2;
         align-items: center;
         justify-content: flex-end;
-
+        flex-wrap: wrap;
 
         li {
             text-decoration: none;

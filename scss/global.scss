@@ -1,5 +1,4 @@
 @import "plugins";
-@import "partials/header";
 
 html {
     font-family: Helvetica, Arial, Verdana, sans-serif;
@@ -9,20 +8,8 @@ html {
 .wrapper {
     max-width: 1200px;
     margin: 0 auto;
-}
-
-.btn {
-    color: $branco;
-    background: $azul;
-}
-
-.container-banner-home {
-    display: grid;
-
-    img {
-        max-width: 1200px;
-        width: 100%;
-        max-height: 450px;
-        height: auto;
-    }
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    flex-wrap: nowrap;
 }
