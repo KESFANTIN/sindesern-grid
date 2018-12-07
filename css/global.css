@@ -63,7 +63,9 @@ html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   -webkit-box-sizing: inherit;
           box-sizing: inherit; }
 
@@ -84,3 +86,87 @@ img {
 
 .text-center {
   text-align: center; }
+
+.container {
+  max-width: 1200px;
+  margin: auto; }
+
+.button {
+  border: 1px solid #212121;
+  padding: 12px 40px; }
+  .button:hover {
+    color: #e9e9e9;
+    background: #212121; }
+
+.button-white {
+  border: 1px solid #e9e9e9;
+  color: #e9e9e9 !important; }
+  .button-white:hover {
+    color: #212121 !important;
+    background: #e9e9e9; }
+
+.section-description {
+  width: 80%;
+  margin: auto; }
+
+header {
+  background: url("../../images/triangulos.svg");
+  background-size: cover;
+  color: #e9e9e9; }
+  header .top-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 40px 0; }
+    header .top-nav .logo img {
+      max-width: 250px; }
+    header .top-nav ul {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      text-transform: uppercase;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      width: 600px; }
+      header .top-nav ul a {
+        color: #e9e9e9; }
+        header .top-nav ul a:hover {
+          color: #d0d0d0; }
+
+.hero {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-gap: 30px;
+  padding: 20px 0 60px 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center; }
+  .hero .hero-image {
+    padding: 0; }
+  .hero h1 {
+    font-size: 2em;
+    margin: 0;
+    padding: 0; }
+  .hero p {
+    margin: 20px 0; }
+  .hero .button {
+    margin-right: 15px; }
+
+.notices-section {
+  padding: 50px 0; }
+  .notices-section .notices {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px; }

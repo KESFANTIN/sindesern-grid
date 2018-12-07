@@ -1,33 +1,147 @@
 @import "app";
 
 html {
-    box-sizing: border-box;
-  }
-  *, *:before, *:after {
-    box-sizing: inherit;
-  }
-  
-  body {
-    font-family: 'Roboto', Arial, sans-serif;
-    font-size: .9em;
-    font-weight: 300;
-    line-height: 1.6;
-  }
-  
-  a {
-    text-decoration: none;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: .9em;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: $text-color;
+
+  &:visited {
     color: $text-color;
-  
-    &:visited {
-      color: $text-color;
+  }
+}
+
+img {
+  max-width: 100%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+// Button
+.button {
+  border: 1px solid $text-color;
+  padding: 12px 40px;
+
+  &:hover {
+    color: $branco;
+    background: $text-color;
+  }
+}
+
+.button-white {
+  border: 1px solid $branco;
+  color: $branco !important;
+
+  &:hover {
+    color: $text-color !important;
+    background: $branco;
+  }
+} // End Button
+
+.section-description {
+  width: 80%;
+  margin: auto;
+}
+
+// Header
+header {
+  background: url('../../images/triangulos.svg');
+  background-size: cover;
+  color: $branco;
+
+  .top-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0;
+
+    .logo {
+      img {
+        max-width: 250px;
+      }
+    }
+
+    ul {
+      display: flex;
+      text-transform: uppercase;
+      justify-content: space-between;
+      align-items: center;
+      width: 600px;
+
+      a {
+        color: $branco;
+        &:hover {
+          color: darken($branco, 10%);
+
+        }
+      }
     }
   }
-  
-  img {
-    max-width: 100%;
-  }
-  
-  .text-center {
-    text-align: center;
+} // End header
+
+
+// Hero
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: $gutter;
+  padding: 20px 0 60px 0;
+  align-items: center;
+  justify-items: center;
+
+
+  .hero-image {
+    padding: 0;
   }
 
+  // .hero-copy {
+  //   text-align: justify;
+  // }
+
+  h1 {
+    font-size: 2em;
+    margin: 0;
+    padding: 0;
+  }
+
+  p {
+    margin: 20px 0; 
+  }
+
+  .button {
+    margin-right: 15px;
+  }
+} //End hero
+
+
+// Notices
+.notices-section {
+  padding: 50px 0;
+
+  .notices {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: $gutter;
+  }
+}
