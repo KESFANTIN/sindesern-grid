@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -185,3 +186,15 @@ header {
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
               flex-direction: column; }
+
+.benefits-section {
+  background: #F5F5F5;
+  border-top: 1px solid #CDCDCD;
+  padding: 50px 0; }
+  .benefits-section .benefit-post {
+    display: -ms-grid;
+    display: grid;
+    grid-auto-columns: 1fr 1fr 1fr;
+    grid-gap: 30px; }
+
+/* parei aqui - vídeo 43:26 */
