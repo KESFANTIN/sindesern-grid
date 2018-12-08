@@ -1,5 +1,5 @@
 // Títulos do site
-h1, h2 {
+h1, h2, h3 {
   font-family: 'Montserrat', Arial, sans-serif;
   font-weight: bold;
 }
@@ -11,5 +11,10 @@ h1 {
 
 h2 {
   font-size: 22px;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-size: 15px;
   margin-bottom: 10px;
 }

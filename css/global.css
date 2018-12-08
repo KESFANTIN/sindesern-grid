@@ -47,7 +47,7 @@ table {
 /* Small Devices, Tablets */
 /* Extra Small Devices, Phones */
 /* Custom, iPhone Retina */
-h1, h2 {
+h1, h2, h3 {
   font-family: 'Montserrat', Arial, sans-serif;
   font-weight: bold; }
 
@@ -57,6 +57,10 @@ h1 {
 
 h2 {
   font-size: 22px;
+  margin-bottom: 10px; }
+
+h3 {
+  font-size: 15px;
   margin-bottom: 10px; }
 
 html {
@@ -173,3 +177,11 @@ header {
     -ms-grid-columns: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 30px; }
+    .notices-section .notices .notice {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; }

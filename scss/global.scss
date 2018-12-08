@@ -147,5 +147,10 @@ header {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: $gutter;
+
+    .notice {
+      display: flex;
+      flex-direction: column;
+    }
   }
 }
