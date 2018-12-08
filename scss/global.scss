@@ -160,9 +160,9 @@ header {
   border-top: 1px solid $separator-color;
   padding: 50px 0;
 
-  .benefit-post {
+  .benefit-posts {
     display: grid;
-    grid-auto-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-gap: $gutter;
   }
 } /* parei aqui - vídeo 43:26 */
