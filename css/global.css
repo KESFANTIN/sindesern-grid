@@ -109,6 +109,9 @@ img {
   width: 80%;
   margin: auto; }
 
+.button-container {
+  margin: 80px 0; }
+
 header {
   background: url("../../images/triangulos.svg");
   background-size: cover;
