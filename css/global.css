@@ -92,13 +92,11 @@ h3 {
       width: 100%; }
       header .top-nav .logo img {
         width: 90%; }
-      header .top-nav .logo .btn-menu {
-        display: inline-block; }
-        header .top-nav .logo .btn-menu a {
-          color: #e9e9e9; }
-    header .top-nav .enlaces {
-      width: 100% !important;
-      padding: 1em 0; } }
+      header .top-nav .logo a {
+        color: #e9e9e9; }
+  header .enlaces {
+    width: 100% !important;
+    padding: 1em 0; } }
 
 /* Extra Small Devices, Phones */
 /* Custom, iPhone Retina */
