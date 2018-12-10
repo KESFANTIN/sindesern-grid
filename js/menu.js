@@ -14,5 +14,6 @@ $(function(){
 
         if(largura < 768){
             enlaces.hide();
+            icone.addClass('fa-bars');
         }
 });
