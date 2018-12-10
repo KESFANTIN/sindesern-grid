@@ -142,6 +142,7 @@ header {
 // Notices
 .notices-section {
   padding: 50px 0;
+  }
 
   .notices {
     display: grid;
@@ -153,7 +154,7 @@ header {
       flex-direction: column;
     }
   }
-}
+
 
 .benefits-section {
   background: $light-gray-background;
@@ -168,10 +169,14 @@ header {
 
     .benefit-post {
       margin-bottom: 20px;
-    }
 
-    p {
-      margin: 20px 0 40px;
+      p {
+        margin: 20px 0 40px;
+      }
+  
+      h2 {
+        text-transform: uppercase;
+      }
     }
   }
 }
@@ -193,7 +198,7 @@ footer {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      width: 10%;
+      width: 20%;
 
       a {
         color: $branco;
