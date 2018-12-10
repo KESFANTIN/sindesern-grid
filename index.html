@@ -17,17 +17,21 @@
 
 <body>
     <Header>
-        <div class="top-nav container">
-            <div class="logo"><a href="#"><img src="images/logo-sindesern-branca.svg" alt="Logomarca do Sindicato"></a></div>
-            <ul>
-                <li><a href="#">início</a></li>
-                <li><a href="#">O Sindicato</a></li>
-                <li><a href="#">estatuto</a></li>
-                <li><a href="#">notícias</a></li>
-                <li><a href="#">associados</a></li>
-                <li><a href="#">contato</a></li>
-            </ul>
-        </div> <!-- end top-nav -->
+        <!-- <div id="navegation"> -->
+            <nav class="top-nav container">
+                <div class="logo"><a href="#">
+                    <img src="images/logo-sindesern-branca.svg" alt="Logomarca do Sindicato"></a>
+                    <div class="btn-menu" id="btn-menu"><a href="#"><i class="icone fas fa-bars fa-2x"></i></a></div>
+                </div>
+                <ul class="enlaces" id="enlaces">
+                    <li><a href="#"><i class="fas fa-home" aria-hidden="false"></i> início</a></li>
+                    <li><a href="#"><i class="fas fa-building" aria-hidden="true"></i> Sindicato</a></li>
+                    <li><a href="#"><i class="fas fa-newspaper" aria-hidden="true"></i> notícias</a></li>
+                    <li><a href="#"><i class="fas fa-address-card" aria-hidden="true"></i> associados</a></li>
+                    <li><a href="#"><i class="fas fa-envelope" aria-hidden="true"></i> contato</a></li>
+                </ul>
+            </nav> <!-- end top-nav -->
+        <!-- </div> -->
 
         <div class="hero container">
             <div class="hero-copy">
@@ -161,7 +165,7 @@
 
     <footer>
         <div class="footer-content container">
-            <div class="made-with">Made by <a href="#"><i class="fa fa-user"></i> Klayton Fantin</a></div>
+            <div class="made-with">Made by <a href="https://www.facebook.com/art.focus.39"><i class="fa fa-user"></i> Klayton Fantin</a></div>
             <ul>
                 <li>Siga-nos:</li>
                 <li><a href="#"><i class="fab fa-facebook fa-2x"></i></a></li>
@@ -172,6 +176,8 @@
 
 
     <script src="js/jquery.min.js" type="text/javascript"></script>
+    <script src="js/headroom.min.js" type="text/javascript"></script>
+    <script src="js/menu.js" type="text/javascript"></script>
 </body>
 
 </html>

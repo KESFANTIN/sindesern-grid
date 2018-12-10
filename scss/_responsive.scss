@@ -1,28 +1,56 @@
 /*==========  Non-Mobile First Method  ==========*/
+@import "variables";
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
     .container {
-        max-width: 960px;
+        width: 90%;
     }
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 900px) {
-    
+
+    .container {
+        width: 90%;
+    }
 }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
+    header {
+        .top-nav {
+            flex-direction: column;
+            align-items: center;
 
+            .logo {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                width: 100%;
+
+                img {
+                    width: 90%;
+                }
+
+
+                a {
+                    color: $branco;
+                }
+            }
+        }
+
+        .enlaces {
+            width: 100% !important;
+            padding: 1em 0;
+        }
+    }
 }
+}
+
 
 /* Extra Small Devices, Phones */
-@media only screen and (max-width : 480px) {
-
-}
+@media only screen and (max-width : 480px) {}
 
 /* Custom, iPhone Retina */
-@media only screen and (max-width : 320px) {
-
-}
+@media only screen and (max-width : 320px) {}
