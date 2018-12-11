@@ -36,7 +36,7 @@ img {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 90%;
   margin: auto;
 }
 
@@ -68,23 +68,12 @@ header {
   background-size: cover;
   color: $branco;
 
-    // Efeitos Headroom
-    .headroom {
-      transition: transform .3s ease;
-    }
-
-    .headroom--pinned {
-      transform: translateY(0%);
-    }
-
-    .headroom--unpinned {
-      transform: translateY(0%);
-    }
-
   .top-nav {
     display: flex;
     justify-content: space-between;
+    flex-direction: row;
     padding: 30px 0;
+    width: 60%;
 
 
     .logo {
@@ -93,13 +82,11 @@ header {
       }
     }
 
-
-    .menu {
+    .paginas {
       display: flex;
       text-transform: uppercase;
       justify-content: space-between;
       align-items: center;
-      width: 60%;
 
       a {
           color: $branco;
