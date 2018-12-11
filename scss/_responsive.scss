@@ -2,10 +2,31 @@
 @import "variables";
 
 /* Large Devices, Wide Screens */
-@media only screen and (max-width : 1200px) {}
+@media only screen and (max-width : 1200px) {
+    .container {
+        width: 90%;
+    }
+}
 
 /* Small Devices, Tablets */
-@media only screen and (max-width : 992px) {}
+@media only screen and (max-width : 800px) {
+
+    .top-nav {
+        flex-direction: column;
+        justify-content: space-between;
+
+        .logo {
+            width: 100%;
+            justify-content: space-between;
+        }
+
+        .paginas {
+            width: 100%;
+            justify-content: space-between;
+            
+        }
+    }
+}
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {}
