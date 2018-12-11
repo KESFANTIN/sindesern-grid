@@ -1,4 +1,4 @@
-$(function(){
+$(function () {
     // Aparece e esconde menu
     var navegation = document.getElementById('navegation');
     var headroom = new Headroom(navegation);
@@ -8,12 +8,30 @@ $(function(){
     //Menu Responsive
     // Calcula a largura da página
     var largura = $(window).width(),
-        enlaces = $('enlaces'),
-        btnMenu = $('btn-menu'),
-        icone = $('btnMenu, icone');
+        paginas = $('#paginas'),
+        btnMenu = $('#btn-menu'),
+        icone = $('#btn-menu .icone');
 
-        if(largura < 768){
-            enlaces.hide();
+    if (largura < 700) {
+        paginas.hide();
+        icone.addClass('fa-bars');
+    }
+
+    btnMenu.on('click', function (e) {
+        paginas.slideToggle();
+        icone.toggleClass('fa-bars');
+        icone.toggleClass('fa-times');
+    });
+
+    $(window).on('resize', function () {
+        if ($(this).width() > 700) {
+            paginas.show();
+            icone.addClass('fa-times');
+            icone.removeClass('fa-bars');
+        } else {
+            paginas.hide();
             icone.addClass('fa-bars');
+            icone.removeClass('fa-times');
         }
+    });
 });

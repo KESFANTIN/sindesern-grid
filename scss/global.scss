@@ -98,7 +98,7 @@ header {
     }
 
 
-    ul {
+    .paginas {
       display: flex;
       text-transform: uppercase;
       justify-content: space-between;
@@ -106,7 +106,10 @@ header {
       width: 60%;
 
       a {
-        color: $branco;
+          color: $branco;
+          text-decoration: none;
+          list-style: none;
+          text-transform: uppercase;
         &:hover {
           color: darken($branco, 10%);
         }

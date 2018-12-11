@@ -6,6 +6,9 @@
     .container {
         width: 90%;
     }
+    .btn-menu {
+        display: none;
+    }
 }
 
 /* Medium Devices, Desktops */
@@ -17,12 +20,27 @@
 }
 
 /* Small Devices, Tablets */
-@media only screen and (max-width : 768px) {
+@media only screen and (max-width : 700px) {
     header {
         .top-nav {
             flex-direction: column;
-            align-items: center;
 
+
+            .paginas {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-around; 
+                width: 100% !important;
+                padding: 1em 0;
+
+                a {
+                    color: $branco;
+                    text-decoration: none;
+                    list-style: none;
+                    text-transform: uppercase;
+                }
+            }
             .logo {
                 display: flex;
                 flex-direction: row;
@@ -33,16 +51,14 @@
                     width: 90%;
                 }
 
-
                 a {
                     color: $branco;
                 }
-            }
-        }
 
-        .enlaces {
-            width: 100% !important;
-            padding: 1em 0;
+                .btn-menu {
+                    display: inline-block;
+                }
+            }
         }
     }
 }
