@@ -1,13 +1,13 @@
 $(function () {
     // Aparece e esconde menu
-    var navegation = document.getElementById('navegation');
-    var headroom = new Headroom(navegation);
+    let navegation = document.getElementById('navegation');
+    let headroom = new Headroom(navegation);
     headroom.init();
 
 
     //Menu Responsive
     // Calcula a largura da página
-    var largura = $(window).width(),
+    let largura = $(window).width(),
         paginas = $('#paginas'),
         btnMenu = $('#btn-menu'),
         icone = $('#btn-menu .icone');
@@ -26,8 +26,8 @@ $(function () {
     $(window).on('resize', function () {
         if ($(this).width() > 700) {
             paginas.show();
-            icone.addClass('fa-times');
-            icone.removeClass('fa-bars');
+            // icone.addClass('fa-times');
+            // icone.removeClass('fa-bars');
         } else {
             paginas.hide();
             icone.addClass('fa-bars');
