@@ -66,6 +66,7 @@ img {
 header {
   background: url('../../images/triangulos.svg');
   background-size: cover;
+  background-position: center;
   color: $branco;
 
   .top-nav {
@@ -82,11 +83,12 @@ header {
       }
     }
 
-    .paginas {
+    .menu {
       display: flex;
       text-transform: uppercase;
       justify-content: space-between;
       align-items: center;
+      width: 60%;
 
       a {
           color: $branco;

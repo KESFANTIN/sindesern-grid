@@ -2,16 +2,10 @@
 @import "variables";
 
 /* Large Devices, Wide Screens */
-@media only screen and (max-width : 1200px) {
-    .container {
-        width: 90%;
-    }
-}
+@media only screen and (max-width : 1200px) {}
 
 /* Small Devices, Tablets */
-@media only screen and (max-width : 992px) {
-
-}
+@media only screen and (max-width : 992px) {}
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {}
