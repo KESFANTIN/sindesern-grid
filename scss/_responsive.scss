@@ -1,35 +1,110 @@
 /*==========  Non-Mobile First Method  ==========*/
 @import "variables";
 
-/* Large Devices, Wide Screens */
-@media only screen and (max-width : 1200px) {
-    .container {
-        width: 90%;
-    }
-}
-
-/* Small Devices, Tablets */
-@media only screen and (max-width : 800px) {
-
-    .top-nav {
-        flex-direction: column;
-        justify-content: space-between;
-
-        .logo {
-            width: 100%;
-            justify-content: space-between;
-        }
-
-        .paginas {
-            width: 100%;
-            justify-content: space-between;
-            
+@media screen and (max-width: 1200px) {
+    header {
+        nav {
+            .nav-links {
+                width: 70%;
+            }
         }
     }
 }
 
-/* Extra Small Devices, Phones */
-@media only screen and (max-width : 480px) {}
+@media screen and (max-width: 992px) {
+    header {
+        nav {
+            .nav-links {
+                width: 80%;
+            }
+        }
+    }
+}
 
-/* Custom, iPhone Retina */
-@media only screen and (max-width : 320px) {}
+@media screen and (max-width: 768px) {
+    header {
+        nav {
+            .nav-links {
+                position: absolute;
+                right: 0px;
+                height: auto;
+                top: 96px;
+                background-color: rgba($branco, .3);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-evenly;
+                width: 60%;
+                transform: translateX(100%);
+                transition: transform 0.5s ease-in;
+            }
+
+            .nav-active {
+                transform: translateX(0%);
+            }
+
+            @keyframes navLinkFade {
+                from {
+                    opacity: 0;
+                    transform: translateX(50px);
+                }
+
+                to {
+                    opacity: 1;
+                    transform: translateX(0px);
+                }
+            }
+
+            li {
+                opacity: 0;
+                line-height: 3;
+                display: inline-block;
+                text-align: center;
+
+                a {
+                    padding: 20px;
+                }
+            }
+
+            .burger {
+                display: block;
+                cursor: pointer;
+            }
+
+            .toggle .line1 {
+                transform: rotate(-45deg) translate(-5px, 6px);
+            }
+
+
+            .toggle .line2 {
+                opacity: 0;
+            }
+
+            .toggle .line3 {
+                transform: rotate(45deg) translate(-5px, -6px);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 320px) {
+    header {
+        nav {
+            .nav-links {
+                width: 100%;
+                
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 200px) {
+    header {
+        nav {
+            .nav-links {
+                width: 100%;
+                
+            }
+        }
+    }
+}

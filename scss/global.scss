@@ -1,22 +1,27 @@
 @import "app";
 @import "responsive";
+@import "partials/titles";
 
-html {
+* {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
-
 body {
+  overflow-x: hidden;
   font-family: 'Roboto', Helvetica, Arial, sans-serif;
   font-size: .9em;
   font-weight: 300;
   line-height: 1.6;
 }
+
+// body {
+//   font-family: 'Roboto', Helvetica, Arial, sans-serif;
+//   font-size: .9em;
+//   font-weight: 300;
+//   line-height: 1.6;
+// }
 
 a {
   text-decoration: none;
@@ -33,11 +38,6 @@ img {
 
 .text-center {
   text-align: center;
-}
-
-.container {
-  max-width: 90%;
-  margin: auto;
 }
 
 // Button
@@ -59,45 +59,87 @@ img {
     color: $text-color !important;
     background: $branco;
   }
-}// End Button
+}
 
+// End Button
+
+
+.container {
+  max-width: 80%;
+  margin: 0 auto;
+}
 
 // Header
 header {
-  background: url('../../images/triangulos.svg');
-  background-size: cover;
+  width: 100%;
+  background: url(../../images/triangulos.svg);
   background-position: center;
-  color: $branco;
+  background-size: cover;
 
-  .top-nav {
+  nav {
     display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    padding: 30px 0;
-
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    min-height: 8vh;
+    background-color: rgba($preto, .8);
+    font-family: 'Roboto', verdana, Helvetica, sans-serif;
+    padding: 20px 0;
 
     .logo {
-      img {
-        max-width: 200px;
+      color: $branco;
+      font-size: 1.3em;
+
+      a {
+        color: $branco;
+        transition: 0.2s ease-in-out;
+        text-decoration: none;
+
+        &:hover {
+          color: darken($branco, 20%);
+          transition: 0.2s ease-in-out;
+        }
       }
     }
 
-    .paginas {
+    .nav-links {
       display: flex;
-      text-transform: uppercase;
-      justify-content: space-between;
-      align-items: center;
-      width: 60%;
+      justify-content: space-around;
+      width: 50%;
+
+      li {
+        list-style: none;
+      }
 
       a {
-          color: $branco;
-          text-decoration: none;
-          list-style: none;
-          text-transform: uppercase;
+        color: $branco;
+        text-decoration: none;
+        font-size: .8em;
+        font-weight: 600;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 15px;
+        transition: 0.2s ease-in-out;
+
         &:hover {
-          color: darken($branco, 10%);
+          color: darken($branco, 20%);
+          transition: 0.2s ease-in-out;
+          //background: rgba($preto, .3)
         }
       }
+    }
+
+    .burger {
+      display: none;
+    }
+
+    .burger div {
+      width: 25px;
+      height: 3px;
+      margin: 5px;
+      background: $branco;
+      transition: all 0.3s ease;
     }
   }
 }
@@ -105,8 +147,8 @@ header {
 // End header
 
 .section-description {
-  width: 80%;
-  margin: auto;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .button-container {
@@ -216,5 +258,115 @@ footer {
       }
 
     }
+  }
+}
+
+
+// Media Querys
+@media screen and (max-width: 1200px) {
+  header {
+      nav {
+          .nav-links {
+              width: 70%;
+          }
+      }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  header {
+      nav {
+          .nav-links {
+              width: 80%;
+          }
+      }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header {
+      nav {
+          .nav-links {
+              position: absolute;
+              right: 0px;
+              height: auto;
+              top: 96px;
+              background-color: rgba($preto, .8);
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: space-evenly;
+              width: 60%;
+              transform: translateX(100%);
+              transition: transform 0.5s ease-in;
+          }
+
+          .nav-active {
+              transform: translateX(0%);
+          }
+
+          @keyframes navLinkFade {
+              from {
+                  opacity: 0;
+                  transform: translateX(50px);
+              }
+
+              to {
+                  opacity: 1;
+                  transform: translateX(0px);
+              }
+          }
+
+          li {
+              opacity: 0;
+              line-height: 3;
+              display: inline-block;
+              text-align: center;
+
+              a {
+                  padding: 20px;
+              }
+          }
+
+          .burger {
+              display: block;
+              cursor: pointer;
+          }
+
+          .toggle .line1 {
+              transform: rotate(-45deg) translate(-5px, 6px);
+          }
+
+
+          .toggle .line2 {
+              opacity: 0;
+          }
+
+          .toggle .line3 {
+              transform: rotate(45deg) translate(-5px, -6px);
+          }
+      }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  header {
+      nav {
+          .nav-links {
+              width: 100%;
+              
+          }
+      }
+  }
+}
+
+@media screen and (max-width: 200px) {
+  header {
+      nav {
+          .nav-links {
+              width: 100%;
+              
+          }
+      }
   }
 }
