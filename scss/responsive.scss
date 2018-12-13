@@ -23,6 +23,15 @@
         width: 100%;
       }
     }
+
+    .hero-copy {
+      h1 {
+        font-size: 1.5em;
+      }
+      p {
+        font-size: 1em;
+      }
+    }
   }
 }
 
@@ -30,14 +39,14 @@
   header {
     .nav-top {
       .logo img {
-        max-width: 70%;
+        max-width: 50%;
       }
 
       .nav-links {
         position: absolute;
         right: 0px;
         height: auto;
-        top: 150px;
+        top: 16%;
         background-color: rgba($preto, .9);
         display: flex;
         flex-direction: column;
@@ -105,11 +114,11 @@
     .hero-copy {
 
       h1 {
-        font-size: 1.5em;
+        font-size: 1.2em;
       }
 
       p {
-        font-size: 1em;
+        font-size: 0.8em;
       }
     }
   }
@@ -125,6 +134,53 @@
   .benefit-posts {
     grid-template-columns: 1fr 1fr;
     text-align: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+
+  .button {
+    padding: 7px 15px;
+  }
+  header {
+    .nav-top {
+      .logo img {
+        max-width: 50%;
+      }
+      .nav-links {
+        width: 100%;
+      }
+    }
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    text-align: center;
+    .hero-image {
+      display: none;
+    }
+  }
+
+  .notices {
+    grid-template-columns: 1fr;
+
+    .notice:nth-last-child(1) {
+      grid-column: 1 / 2;
+    }
+  }
+
+  .benefit-posts {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+
+    ul {
+      margin: 20px 0 0 0;
+      width: 100% !important;
+    }
   }
 }
 

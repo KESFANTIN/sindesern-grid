@@ -1,5 +1,4 @@
 @import "app";
-@import "partials/titles";
 
 * {
   margin: 0;
@@ -66,6 +65,7 @@ img {
 .section-description {
   width: 90%;
   margin: 0 auto;
+  text-align: center;
 }
 
 .button-container {
@@ -77,6 +77,9 @@ img {
 .hero {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-column: 1 / 3;
+  text-align: center;
+  justify-content: space-between;
   grid-gap: $gutter;
   padding: 0px 0 60px 0;
   align-items: center;
@@ -121,8 +124,12 @@ img {
   .notice {
     display: flex;
     flex-direction: column;
+    border: 1px solid $separator-color;
+    padding: 10px;
   }
 }
+
+// End Notices
 
 
 .benefits-section {
@@ -139,6 +146,9 @@ img {
 
   .benefit-post {
     margin-bottom: 20px;
+    border: 1px solid $separator-color;
+    padding: 10px;
+    justify-content: space-between;
 
     p {
       margin: 20px 0 40px;
@@ -146,6 +156,11 @@ img {
 
     h2 {
       text-transform: uppercase;
+    }
+
+    .button {
+      margin: 20px 0;
+      display: inline-block;
     }
   }
 }
@@ -173,7 +188,6 @@ footer {
       a {
         color: $branco;
       }
-
     }
   }
 }

@@ -1,7 +1,50 @@
 @charset "utf-8";
 @import "reset";
-@import "variables";
 
+
+// Variables
+$text-color: #212121;
+$branco: #e9e9e9;
+$light-gray-background: #F5F5F5;
+$gray-background: #535353;
+$separator-color: #CDCDCD;
+$gutter: 30px;
+
+$verde: #00A233;
+$preto: #000000;
+$amarelo: #FBC02D;
+$azul: #0058A6;
+$vermelho: #ff0000;
+$cinza: #666666;
+
+// Body
+$body-bg: #f5f8fa;
+
+
+
+// Títulos do site
+h1, h2, h3 {
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 1.8em;
+  margin-bottom: 40px;
+}
+
+h2 {
+  font-size: 1em;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-size: .8em;
+  margin-bottom: 10px;
+}
+
+
+//Header
 header {
     width: 100%;
     background: url(../../images/triangulos.svg);
