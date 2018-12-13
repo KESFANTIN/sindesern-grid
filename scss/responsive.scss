@@ -1,0 +1,165 @@
+/*==========  Non-Mobile First Method  ==========*/
+@import "variables";
+
+// Media Querys
+@media screen and (max-width: 1200px) {
+  header {
+    .nav-top {
+      .nav-links {
+        width: 70%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  header {
+    .nav-top {
+      .logo img {
+        max-width: 80%;
+      }
+
+      .nav-links {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    .nav-top {
+      .logo img {
+        max-width: 70%;
+      }
+
+      .nav-links {
+        position: absolute;
+        right: 0px;
+        height: auto;
+        top: 150px;
+        background-color: rgba($preto, .9);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 60%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+      }
+
+      .nav-active {
+        transform: translateX(0%);
+      }
+
+      @keyframes navLinkFade {
+        from {
+          opacity: 0;
+          transform: translateX(50px);
+        }
+
+        to {
+          opacity: 1;
+          transform: translateX(0px);
+        }
+      }
+
+      li {
+        opacity: 0;
+        line-height: 3;
+        display: inline-block;
+        text-align: center;
+
+        a {
+          padding: 20px;
+        }
+      }
+
+      .burger {
+        display: block;
+        cursor: pointer;
+      }
+
+      .toggle .line1 {
+        transform: rotate(-45deg) translate(-5px, 6px);
+      }
+
+
+      .toggle .line2 {
+        opacity: 0;
+      }
+
+      .toggle .line3 {
+        transform: rotate(45deg) translate(-5px, -6px);
+      }
+    }
+  }
+
+  .hero {
+    grid-template-columns: 1fr 1fr;
+
+    .hero-image {
+      display: block;
+    }
+
+    .hero-copy {
+      
+      h1 {
+        font-size: 1.5em;
+      }
+
+      p {
+        font-size: 1em;
+      }
+    }
+  }
+
+  .notices {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .benefit-posts {
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  header {
+    .nav-top {
+      .nav-links {
+        width: 100%;
+      }
+    }
+  }
+
+  .hero {
+    .hero-image {
+      display: none;
+    }
+  }
+
+  .benefit-posts {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+
+    ul {
+      margin: 20px 0 0 0;
+      width: 100% !important;
+    }
+  }
+}
+
+@media screen and (max-width: 200px) {
+  header {
+    .nav-top {
+      .nav-links {
+        width: 100%;
+      }
+    }
+  }
+}
