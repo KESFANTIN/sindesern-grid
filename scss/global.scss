@@ -82,14 +82,10 @@ img {
   align-items: center;
   justify-items: center;
 
-
   .hero-image {
     padding: 0;
   }
 
-  // .hero-copy {
-  //   text-align: justify;
-  // }
 
   h1 {
     font-size: 2em;
@@ -99,7 +95,7 @@ img {
   }
 
   p {
-    padding: 20px 0; 
+    padding: 20px 0;
     color: $branco;
   }
 
@@ -134,24 +130,25 @@ img {
   border-top: 1px solid $separator-color;
   padding: 50px 0;
 }
-  .benefit-posts {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: $gutter;
-    margin: 60px 0 60px;
 
-    .benefit-post {
-      margin-bottom: 20px;
+.benefit-posts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: $gutter;
+  margin: 60px 0 60px;
 
-      p {
-        margin: 20px 0 40px;
-      }
+  .benefit-post {
+    margin-bottom: 20px;
 
-      h2 {
-        text-transform: uppercase;
-      }
+    p {
+      margin: 20px 0 40px;
+    }
+
+    h2 {
+      text-transform: uppercase;
     }
   }
+}
 
 
 footer {
