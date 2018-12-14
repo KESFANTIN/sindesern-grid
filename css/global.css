@@ -196,8 +196,7 @@ img {
   padding: 0px 0 60px 0;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center;
-  justify-items: center; }
+          align-items: center; }
   .hero .hero-image {
     padding: 0; }
   .hero h1 {
