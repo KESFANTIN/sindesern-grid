@@ -22,7 +22,9 @@ $body-bg: #f5f8fa;
 
 
 // Títulos do site
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: 'Montserrat', Arial, sans-serif;
   font-weight: bold;
 }
@@ -45,77 +47,78 @@ h3 {
 
 //Header
 header {
+  width: 100%;
+  background: url(../../images/triangulos.svg);
+  background-position: center;
+  background-size: cover;
+
+  .nav-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
-    background: url(../../images/triangulos.svg);
-    background-position: center;
-    background-size: cover;
-  
-    .nav-top {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      width: 100%;
-      height: auto;
-      //background-color: rgba($preto, .5);
-      font-family: 'Roboto', verdana, Helvetica, sans-serif;
-      padding: 20px 0;
-  
-      .logo {
-        font-size: 1.3em;
-  
-        img {
-          max-width: 60%;
-        }
-  
-        a {
-          color: $branco;
+    height: auto;
+    //background-color: rgba($preto, .5);
+    font-family: 'Roboto', verdana, Helvetica, sans-serif;
+    padding: 20px 0;
+
+    .logo {
+      font-size: 1.3em;
+
+      img {
+        max-width: 60%;
+      }
+
+      a {
+        color: $branco;
+        transition: 0.2s ease-in-out;
+        text-decoration: none;
+
+        &:hover {
+          color: darken($branco, 20%);
           transition: 0.2s ease-in-out;
-          text-decoration: none;
-  
-          &:hover {
-            color: darken($branco, 20%);
-            transition: 0.2s ease-in-out;
-          }
         }
-      }
-  
-      .nav-links {
-        display: flex;
-        justify-content: space-around;
-        width: 50%;
-  
-        li {
-          list-style: none;
-        }
-  
-        a {
-          color: $branco;
-          text-decoration: none;
-          font-size: .8em;
-          font-weight: 600;
-          letter-spacing: 1px;
-          text-transform: uppercase;
-          text-decoration: none;
-          padding: 15px;
-          transition: 0.2s ease-in-out;
-  
-          &:hover {
-            color: darken($branco, 20%);
-            transition: 0.2s ease-in-out;
-          }
-        }
-      }
-  
-      .burger {
-        display: none;
-      }
-  
-      .burger div {
-        width: 25px;
-        height: 3px;
-        margin: 5px;
-        background: $branco;
-        transition: all 0.3s ease;
       }
     }
+
+    .nav-links {
+      display: flex;
+      justify-content: space-around;
+      width: 50%;
+      z-index: 20;
+
+      li {
+        list-style: none;
+      }
+
+      a {
+        color: $branco;
+        text-decoration: none;
+        font-size: .8em;
+        font-weight: 600;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 15px;
+        transition: 0.2s ease-in-out;
+
+        &:hover {
+          color: darken($branco, 20%);
+          transition: 0.2s ease-in-out;
+        }
+      }
+    }
+
+    .burger {
+      display: none;
+    }
+
+    .burger div {
+      width: 25px;
+      height: 3px;
+      margin: 5px;
+      background: $branco;
+      transition: all 0.3s ease;
+    }
   }
+}

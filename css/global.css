@@ -41,7 +41,9 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: 'Montserrat', Arial, sans-serif;
   font-weight: bold; }
 
@@ -95,7 +97,8 @@ header {
       display: flex;
       -ms-flex-pack: distribute;
           justify-content: space-around;
-      width: 50%; }
+      width: 50%;
+      z-index: 20; }
       header .nav-top .nav-links li {
         list-style: none; }
       header .nav-top .nav-links a {
@@ -136,15 +139,18 @@ body {
   font-weight: 300;
   line-height: 1.6; }
 
-a {
+/*a {
   text-decoration: none;
-  color: #212121; }
-  a:visited {
-    color: #212121; }
+  color: $text-color;
+
+  &:visited {
+    color: $text-color;
+  }
+}
 
 img {
-  max-width: 100%; }
-
+  max-width: 100%;
+}*/
 .text-center {
   text-align: center; }
 
@@ -171,7 +177,7 @@ img {
   margin: 0 auto; }
 
 .section-description {
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
   text-align: center; }
 
@@ -181,8 +187,8 @@ img {
 .hero {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
