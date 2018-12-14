@@ -13,13 +13,16 @@
     <!-- Styles -->
     <link rel="stylesheet" href="css/compressed/global.min.css">
     <link rel="stylesheet" href="css/compressed/responsive.min.css">
+    <link rel="stylesheet" href="css/compressed/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/compressed/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/style_slider.css">
     <title>SINDESERN</title>
 </head>
 
 <body>
     <header>
-        <nav class="nav-top container wow fadeIn" data-wow-duration="1s" data-wow-delay="0.1s">
+        <nav class="nav-top container fadeIn" data-duration="1s" data-delay="0.1s">
 
             <div class="logo">
                 <a href="#"><img src="images/logo-sindesern-branca.svg" alt="Sindesern Logo"></a>
@@ -42,37 +45,43 @@
         </nav> <!-- end top-nav -->
         <!-- </div> -->
 
-        <div class="hero container wow fadeIn" data-wow-duration="1s" data-wow-delay="0.3s">
-            <div class="hero-copy">
-                <h1>A Importância das Contribuições 1</h1>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero molestias voluptatum consequatur
-                    laboriosam debitis inventore...</p>
-                <div class="hero-buttons">
-                    <a href="#" class="button button-white">Leia Mais</a>
-                    <!--<a href="#" class="button button-white">Assistencial</a>-->
-                </div>
-                
-            </div><!-- end hero-copy -->
 
-            <div class="hero-image">
+
+        <div class="banner owl-carousel owl-theme owl-loaded">
+            <div class="hero container">
+                <div class="hero-copy">
+                    <h1>A Importância das Contribuições 1</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero molestias voluptatum
+                        consequatur
+                        laboriosam debitis inventore...</p>
+                    <span class="hero-buttons">
+                        <a href="#" class="button button-white">Leia Mais</a>
+                        <!--<a href="#" class="button button-white">Assistencial</a>-->
+                    </span>
+                </div><!-- end hero-copy -->
+            </div> <!-- end hero -->
+            <!--<div class="hero-image">
                 <img src="images/pizza.png" alt="Macbook image">
-            </div>
-        </div> <!-- end hero -->
+            </div>-->
+        </div>
 
+
+
+        
     </Header> <!-- end header -->
 
     <section class="notices-section">
         <div class="container">
             <h1 class="text-center wow fadeIn" data-wow-duration="1s" data-wow-delay="0.1s">Notícias</h1>
 
-             <!--<p class="section-description wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.1s">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque saepe
+            <!--<p class="section-description wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.1s">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque saepe
                 libero perspiciatis deserunt recusandae soluta. Enim similique architecto cumque mollitia numquam sit
                 incidunt eius quidem. Voluptates voluptate illo eaque aspernatur?</p>
 
             <div class="text-center button-container wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.1s">
                 <a href="#" class="button">Button</a>
                 <a href="#" class="button">Button</a>
-            </div>--> 
+            </div>-->
 
 
             <div class="notices text-center">
@@ -111,7 +120,8 @@
         <div class="container">
             <h1 class="text-center wow fadeIn" data-wow-duration="1s" data-wow-delay="0.12s">Vantagens de ser Associado</h1>
 
-            <p class="section-description wow fadeIn" data-wow-duration="1s" data-wow-delay="0.12s">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam sequi eos
+            <p class="section-description wow fadeIn" data-wow-duration="1s" data-wow-delay="0.12s">Lorem ipsum dolor
+                sit amet consectetur adipisicing elit. Totam sequi eos
                 nobis earum fuga, illo quidem expedita quis dolorem rerum tenetur saepe eaque laborum dolor accusantium
                 placeat, voluptate excepturi libero?</p>
 
@@ -174,7 +184,8 @@
 
     <footer>
         <div class="footer-content container">
-            <div class="made-with wow fadeIn" data-wow-duration="1s" data-wow-delay="0.30s">Made by <a href="https://www.facebook.com/art.focus.39"><i class="fa fa-user"></i>
+            <div class="made-with wow fadeIn" data-wow-duration="1s" data-wow-delay="0.30s">Made by <a href="https://www.facebook.com/art.focus.39"><i
+                        class="fa fa-user"></i>
                     Klayton Fantin</a></div>
             <ul class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.33s">
                 <li>Siga-nos:</li>
@@ -186,11 +197,9 @@
 
 
     <script src="js/jquery.min.js" type="text/javascript"></script>
-    <script src="js/wow.min.js" type="text/javascript"></script>
-    <script src="js/menu.js" type="text/javascript"></script>
-    <script>
-        new WOW().init();
-    </script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/slider.js"></script>
+
 </body>
 
 </html>
