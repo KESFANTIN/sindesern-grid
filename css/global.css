@@ -98,7 +98,8 @@ header {
       -ms-flex-pack: distribute;
           justify-content: space-around;
       width: 50%;
-      z-index: 20; }
+      z-index: 20;
+      position: fixed; }
       header .nav-top .nav-links li {
         list-style: none; }
       header .nav-top .nav-links a {
