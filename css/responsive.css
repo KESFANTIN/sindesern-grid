@@ -22,7 +22,6 @@
   header .nav-top .logo img {
     max-width: 50%; }
   header .nav-top .nav-links {
-    position: absolute;
     right: 0px;
     height: auto;
     top: 16%;
@@ -46,7 +45,8 @@
     -webkit-transition: -webkit-transform 0.5s ease-in;
     transition: -webkit-transform 0.5s ease-in;
     transition: transform 0.5s ease-in;
-    transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in; }
+    transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
+    position: absolute; }
   header .nav-top .nav-active {
     -webkit-transform: translateX(0%);
             transform: translateX(0%); }
