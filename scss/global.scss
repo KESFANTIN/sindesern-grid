@@ -79,42 +79,6 @@ img {
 }
 
 
-// Hero
-.hero {
-  display: grid;
-  grid-template-columns: 1fr;
-  justify-content: space-between;
-  grid-gap: $gutter;
-  padding: 0px 0 60px 0;
-  align-items: center;
-
-
-  .hero-image {
-    padding: 0;
-  }
-
-
-  h1 {
-    font-size: 1.5em;
-    margin: 0;
-    padding: 0;
-    color: $branco;
-  }
-
-  p {
-    padding: 20px 0;
-    color: $branco;
-  }
-
-  .button {
-    display: inline-block;
-    margin: 10px 0;
-  }
-}
-
-//End hero
-
-
 // Notices
 .notices-section {
   padding: 50px 0;
