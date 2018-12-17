@@ -1,14 +1,12 @@
 @media screen and (max-width: 1200px) {
   .wrapper {
-    overflow-x: hidden !important;
-    position: fixed !important; }
+    overflow-x: hidden !important; }
   header .nav-top .nav-links {
     width: 70%; } }
 
 @media screen and (max-width: 992px) {
   .wrapper {
-    overflow-x: hidden !important;
-    position: fixed !important; }
+    overflow-x: hidden !important; }
   header .nav-top .logo img {
     max-width: 80%; }
   header .nav-top .nav-links {
@@ -20,8 +18,7 @@
 
 @media screen and (max-width: 768px) {
   .wrapper {
-    overflow-x: hidden !important;
-    position: fixed !important; }
+    overflow-x: hidden !important; }
   header .nav-top .logo img {
     max-width: 50%; }
   header .nav-top .nav-links {
@@ -105,8 +102,7 @@
 
 @media screen and (max-width: 480px) {
   .wrapper {
-    overflow-x: hidden !important;
-    position: fixed !important; }
+    overflow-x: hidden !important; }
   .button {
     padding: 7px 15px; }
   header .nav-top .logo img {
@@ -143,8 +139,7 @@
 
 @media screen and (max-width: 320px) {
   .wrapper {
-    overflow-x: hidden !important;
-    position: fixed !important; }
+    overflow-x: hidden !important; }
   header .nav-top .nav-links {
     width: 100%; }
   .hero {
@@ -177,7 +172,6 @@
 
 @media screen and (max-width: 200px) {
   .wrapper {
-    overflow-x: hidden !important;
-    position: fixed !important; }
+    overflow-x: hidden !important; }
   header .nav-top .nav-links {
     width: 100%; } }
