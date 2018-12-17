@@ -1,6 +1,4 @@
-/*==========  Non-Mobile First Method  ==========*/
 @import "variables";
-
 // Media Querys
 @media screen and (max-width: 1200px) {
   header {
@@ -28,6 +26,7 @@
       h1 {
         font-size: 1.5em;
       }
+
       p {
         font-size: 1em;
       }
@@ -102,23 +101,17 @@
         transform: rotate(45deg) translate(-5px, -6px);
       }
     }
-  }
 
-  .hero {
-    grid-template-columns: 1fr 1fr;
-
-    .hero-image {
-      display: block;
-    }
-
-    .hero-copy {
-
-      h1 {
-        font-size: 1.2em;
-      }
-
-      p {
-        font-size: 0.8em;
+    .slider {
+      .item {
+        section {
+          width: 100%;
+          padding: 30px 0;
+          font-size: 1em;
+        }
+        figure {
+          display: none;
+        }
       }
     }
   }
@@ -142,11 +135,13 @@
   .button {
     padding: 7px 15px;
   }
+
   header {
     .nav-top {
       .logo img {
         max-width: 50%;
       }
+
       .nav-links {
         width: 100%;
       }
@@ -156,6 +151,7 @@
   .hero {
     grid-template-columns: 1fr;
     text-align: center;
+
     .hero-image {
       display: none;
     }
@@ -196,6 +192,7 @@
   .hero {
     grid-template-columns: 1fr;
     text-align: center;
+
     .hero-image {
       display: none;
     }

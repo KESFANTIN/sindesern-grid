@@ -8,12 +8,12 @@ $('.owl-carousel').owlCarousel({
     stagePadding:0,
     smartSpeed:450,
     autoplay:true,
-    autoplayTimeout:5000,
+    autoplayTimeout:10000,
     autoplayHoverPause:true
 });
 
 $('.play').on('click',function(){
-    owl.trigger('play.owl.autoplay',[5000])
+    owl.trigger('play.owl.autoplay',[10000])
 })
 $('.stop').on('click',function(){
     owl.trigger('stop.owl.autoplay')

@@ -1,4 +1,3 @@
-/*==========  Non-Mobile First Method  ==========*/
 @media screen and (max-width: 1200px) {
   header .nav-top .nav-links {
     width: 70%; } }
@@ -81,15 +80,12 @@
   header .nav-top .toggle .line3 {
     -webkit-transform: rotate(45deg) translate(-5px, -6px);
             transform: rotate(45deg) translate(-5px, -6px); }
-  .hero {
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr; }
-    .hero .hero-image {
-      display: block; }
-    .hero .hero-copy h1 {
-      font-size: 1.2em; }
-    .hero .hero-copy p {
-      font-size: 0.8em; }
+  header .slider .item section {
+    width: 100%;
+    padding: 30px 0;
+    font-size: 1em; }
+  header .slider .item figure {
+    display: none; }
   .notices {
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr; }
