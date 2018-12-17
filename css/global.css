@@ -195,6 +195,11 @@ body {
   font-weight: 300;
   line-height: 1.6; }
 
+.wrapper {
+  width: 100%;
+  height: auto;
+  overflow: hidden; }
+
 a {
   text-decoration: none;
   color: #212121; }

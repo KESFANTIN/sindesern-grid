@@ -2,7 +2,7 @@
 
 // Media Querys
 @media screen and (max-width: 1200px) {
-  body {
+  .wrapper {
     overflow-x: hidden !important;
   }
 
@@ -16,7 +16,7 @@
 }
 
 @media screen and (max-width: 992px) {
-  body {
+  .wrapper {
     overflow-x: hidden !important;
   }
   header {
@@ -43,7 +43,7 @@
 }
 
 @media screen and (max-width: 768px) {
-  body {
+  .wrapper {
     overflow-x: hidden !important;
   }
   header {
@@ -139,7 +139,7 @@
 }
 
 @media screen and (max-width: 480px) {
-  body {
+  .wrapper {
     overflow-x: hidden !important;
   }
 
@@ -192,7 +192,7 @@
 }
 
 @media screen and (max-width: 320px) {
-  body {
+  .wrapper {
     overflow-x: hidden !important;
   }
   header {
@@ -236,7 +236,7 @@
 }
 
 @media screen and (max-width: 200px) {
-  body {
+  .wrapper {
     overflow-x: hidden !important;
   }
   header {
