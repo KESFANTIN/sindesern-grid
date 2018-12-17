@@ -3,7 +3,7 @@
 // Media Querys
 @media screen and (max-width: 1200px) {
   body {
-    overflow-x: hidden;
+    overflow-x: hidden !important;
   }
 
   header {
@@ -17,7 +17,7 @@
 
 @media screen and (max-width: 992px) {
   body {
-    overflow-x: hidden;
+    overflow-x: hidden !important;
   }
   header {
     .nav-top {
@@ -44,7 +44,7 @@
 
 @media screen and (max-width: 768px) {
   body {
-    overflow-x: hidden;
+    overflow-x: hidden !important;
   }
   header {
     .nav-top {
@@ -140,7 +140,7 @@
 
 @media screen and (max-width: 480px) {
   body {
-    overflow-x: hidden;
+    overflow-x: hidden !important;
   }
 
   .button {
@@ -193,7 +193,7 @@
 
 @media screen and (max-width: 320px) {
   body {
-    overflow-x: hidden;
+    overflow-x: hidden !important;
   }
   header {
     .nav-top {
@@ -237,7 +237,7 @@
 
 @media screen and (max-width: 200px) {
   body {
-    overflow-x: hidden;
+    overflow-x: hidden !important;
   }
   header {
     .nav-top {
