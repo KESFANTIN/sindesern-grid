@@ -3,8 +3,7 @@
 // Media Querys
 @media screen and (max-width: 1200px) {
   .wrapper {
-    overflow-x: hidden !important;
-
+    overflow-x: hidden !important;;
   }
 
   header {
@@ -19,7 +18,6 @@
 @media screen and (max-width: 992px) {
   .wrapper {
     overflow-x: hidden !important;
-
   }
   header {
     .nav-top {
@@ -47,7 +45,6 @@
 @media screen and (max-width: 768px) {
   .wrapper {
     overflow-x: hidden !important;
-
   }
   header {
     .nav-top {
