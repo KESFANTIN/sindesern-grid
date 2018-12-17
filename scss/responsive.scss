@@ -1,6 +1,11 @@
 @import "variables";
+
 // Media Querys
 @media screen and (max-width: 1200px) {
+  body {
+    overflow-x: hidden;
+  }
+
   header {
     .nav-top {
       .nav-links {
@@ -11,6 +16,9 @@
 }
 
 @media screen and (max-width: 992px) {
+  body {
+    overflow-x: hidden;
+  }
   header {
     .nav-top {
       .logo img {
@@ -35,6 +43,9 @@
 }
 
 @media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
   header {
     .nav-top {
       .logo img {
@@ -109,6 +120,7 @@
           padding: 30px 0;
           font-size: 1em;
         }
+
         figure {
           display: none;
         }
@@ -127,6 +139,9 @@
 }
 
 @media screen and (max-width: 480px) {
+  body {
+    overflow-x: hidden;
+  }
 
   .button {
     padding: 7px 15px;
@@ -177,6 +192,9 @@
 }
 
 @media screen and (max-width: 320px) {
+  body {
+    overflow-x: hidden;
+  }
   header {
     .nav-top {
       .nav-links {
@@ -218,6 +236,9 @@
 }
 
 @media screen and (max-width: 200px) {
+  body {
+    overflow-x: hidden;
+  }
   header {
     .nav-top {
       .nav-links {

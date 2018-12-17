@@ -1,8 +1,12 @@
 @media screen and (max-width: 1200px) {
+  body {
+    overflow-x: hidden; }
   header .nav-top .nav-links {
     width: 70%; } }
 
 @media screen and (max-width: 992px) {
+  body {
+    overflow-x: hidden; }
   header .nav-top .logo img {
     max-width: 80%; }
   header .nav-top .nav-links {
@@ -13,6 +17,8 @@
     font-size: 1em; } }
 
 @media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden; }
   header .nav-top .logo img {
     max-width: 50%; }
   header .nav-top .nav-links {
@@ -95,6 +101,8 @@
     text-align: center; } }
 
 @media screen and (max-width: 480px) {
+  body {
+    overflow-x: hidden; }
   .button {
     padding: 7px 15px; }
   header .nav-top .logo img {
@@ -130,6 +138,8 @@
       width: 100% !important; } }
 
 @media screen and (max-width: 320px) {
+  body {
+    overflow-x: hidden; }
   header .nav-top .nav-links {
     width: 100%; }
   .hero {
@@ -161,5 +171,7 @@
       width: 100% !important; } }
 
 @media screen and (max-width: 200px) {
+  body {
+    overflow-x: hidden; }
   header .nav-top .nav-links {
     width: 100%; } }
