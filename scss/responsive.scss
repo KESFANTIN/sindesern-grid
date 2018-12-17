@@ -2,10 +2,6 @@
 
 // Media Querys
 @media screen and (max-width: 1200px) {
-  .wrapper {
-    overflow-x: hidden !important;
-  }
-
   header {
     .nav-top {
       .nav-links {
@@ -16,9 +12,6 @@
 }
 
 @media screen and (max-width: 992px) {
-  .wrapper {
-    overflow-x: hidden !important;
-  }
   header {
     .nav-top {
       .logo img {
@@ -43,9 +36,6 @@
 }
 
 @media screen and (max-width: 768px) {
-  .wrapper {
-    overflow-x: hidden !important;
-  }
   header {
     .nav-top {
       .logo img {
@@ -139,9 +129,6 @@
 }
 
 @media screen and (max-width: 480px) {
-  .wrapper {
-    overflow-x: hidden !important;
-  }
 
   .button {
     padding: 7px 15px;
@@ -192,9 +179,6 @@
 }
 
 @media screen and (max-width: 320px) {
-  .wrapper {
-    overflow-x: hidden !important;
-  }
   header {
     .nav-top {
       .nav-active {
@@ -239,10 +223,6 @@
 }
 
 @media screen and (max-width: 200px) {
-
-  .wrapper {
-    overflow-x: hidden !important;
-  }
   header {
     .nav-top {
       .nav-active {
